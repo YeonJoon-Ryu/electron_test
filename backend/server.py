@@ -9,7 +9,8 @@ from ultralytics import YOLO
 
 
 app = FastAPI()
-app.mount("/static", StaticFiles(directory="../frontend/static"), name="static")
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+app.mount("/static", StaticFiles(directory=os.path.join(BASE_DIR,"../frontend/static")), name="static")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],  # 모든 origin 허용
