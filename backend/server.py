@@ -86,4 +86,4 @@ if __name__ == "__main__":
     
     logging.basicConfig(level=logging.DEBUG)
     
-    uvicorn.run(app, host="127.0.0.1", port=8000, log_level="debug")
+    uvicorn.run(app, host="15.165.144.182", port=8000, log_level="debug")
