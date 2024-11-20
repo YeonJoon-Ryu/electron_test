@@ -1,4 +1,5 @@
 import io
+import os
 
 from PIL import Image
 from fastapi import FastAPI, File, UploadFile, HTTPException
